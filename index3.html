@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/File3.css">
+    <title>Page 3</title>
+
+<script>
+      function validateForm() {
+
+          var name = document.getElementById('name').value.trim();
+          var email = document.getElementById('email').value.trim();
+          var message = document.getElementById('message').value.trim();
+
+          if (name === "" || email === "" || message === "") {
+              alert("All fields must be filled out");
+              return false;
+          }
+          
+
+          if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+              alert("Please enter a valid email address");
+              return false;
+          }
+
+          alert("Thank you for your feedback!");
+          return true;
+      }
+</script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+      <div class="container">
+          <img src="./image/black house.png" alt="" width="80" height="90">
+          <a class="navbar-brand fw-bold mt-2" href="#">Berimbolo 
+          <pre class="p"> Security</pre></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+            
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Products</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="./index3.html" style="color: #1D225C;">Feedbacks</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="./index4.html">Sign In</a>
+                </li>
+            
+            </div>   
+            </ul>
+            </div>
+    
+          </div>
+      </div>
+</nav>
+<!--NAVBAR-->
+
+
+<section>
+<div class="container mt-2">
+        <center><h1 class="ooo">Customer Feedbacks</h1></center>
+        <div class="row d-flex justify-content-center mt-4">
+        
+           
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card text-center rounded-5 d-flex flex-column h-100"> 
+                    <center><img src="./image/images/person1.jpg" class="img-fluid rounded-circle mt-3" width="100" alt="Susan Williams"></center>
+                    <h3>Susan Williams</h3>
+                    <h5 class="text-muted">This My Opinion</h5>
+                    <p>The security systems provided are of excellent quality and have significantly improved our safety</p>
+                    <center><p class="star">★★★★✯</p></center>
+                </div>
+            </div>
+    
+          
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card text-center rounded-5 d-flex flex-column h-100">
+                    <center><img src="./image/images/person3.jpg" class="img-fluid rounded-circle mt-3" width="100" alt="John Doe"></center>
+                    <h3>John Doe</h3>
+                    <h5 class="text-muted">This My Feedback</h5>
+                    <p>The user interface is intuitive, making it easy for everyone to operate the system without extensive training</p>
+                    <center><p class="star">★★★★★</p></center>
+                </div>
+            </div>
+    
+       
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card text-center rounded-5 d-flex flex-column h-100">
+                    <center><img src="./image/images/person2.jpg" class="img-fluid rounded-circle mt-3" width="100" alt="Grace Smith"></center>
+                    <h3>Grace Smith</h3>
+                    <h5 class="text-muted">From my experience</h5>
+                    <p>The installation team was professional and efficient, ensuring everything was set up correctly and quickly</p>
+                    <center><p class="star">★★★★★</p></center>
+                </div>
+            </div>
+    
+  
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card text-center rounded-5 d-flex flex-column h-100">
+                    <center><img src="./image/images/person4.jpg" class="img-fluid rounded-circle mt-3" width="100" alt="Kevin Swanson"></center>
+                    <h3>Kevin Swanson</h3>
+                    <h5 class="text-muted">It seems to me that</h5>
+                    <p>Consider running promotional campaigns during peak seasons to boost sales and awareness</p>
+                    <center><p class="star">★★★✯✯</p></center>
+                </div>
+            </div>
+    
+        </div>
+</div>
+</section>
+<!--CUSTOMER FEEDBACKS-->
+    
+
+ <main>
+        <div class="container mt-5">
+            <center><h1 class="ooo">Write Your Feedback If You Want</h1></center>
+            <h5>Name:</h5>
+            <input id="name" class="form-control" type="text" placeholder="Enter Your Name"><br>
+            <h5>Email:</h5>
+            <input id="email" class="form-control" type="email" placeholder="Enter Your Email"><br>
+            <h5>Feedback</h5>
+            <textarea id="message" name="message" class="form-control" placeholder="Share Your Opinion" rows="8"></textarea><br>
+            <button type="button" class="btn rounded-5" onclick="validateForm()">Submit Feedback</button>
+        </div>
+</main>
+<!--FORM FOR WRITE FEEDBACK-->
+
+
+<footer class="mt-5" style="background-color: #1D225C; padding: 20px;">   
+            <div class="container">
+              <div class="row">
+      
+                <div class="col-md-4 mb-4">
+                  <h5>Contact Information</h5>
+                  <ul class="list-unstyled">
+                    <li>Contact Us</li>
+                    <li>Technical Support</li>
+                    <li>Customer Service</li>
+                    <li>Frequently Asked Question</li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-4 mb-4">
+                  <h5>Company Information</h5>
+                  <ul class="list-unstyled">
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>Certifications and Licenses</li>
+                  </ul>
+                </div>
+          
+                <div class="col-md-4 mb-4">
+                  <h5>Social Media</h5>
+                  <ul class="list-unstyled">
+                    <li>Follow Us On</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+</footer>
+<!--FOOTER-->
+
+
+      
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/File3.js"></script>
+</body>
+</html>

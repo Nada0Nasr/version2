@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/File4.css">
+    <title>Page 4</title>
+
+
+<script>
+      function validateForm() {
+
+          const firstName = document.getElementById("firstName").value.trim();
+          const lastName = document.getElementById("lastName").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const email = document.getElementById("email").value.trim();
+
+          if (!firstName || !lastName || !phone || !email) {
+              alert("All fields are required!");
+              return false;
+          }
+
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(email)) {
+              alert("Please enter a valid email address!");
+              return false;
+          }
+
+          const phonePattern = /^\d+$/;
+          if (!phonePattern.test(phone)) {
+              alert("Please enter a valid phone number (digits only)!");
+              return false;
+          }
+
+          alert("Form submitted successfully!");
+          return true;
+      }
+</script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+        <div class="container">
+          <img src="./image/black house.png" alt="" width="80" height="90">
+          <a class="navbar-brand fw-bold mt-2" href="#">Berimbolo 
+          <pre class="p"> Security</pre></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+            
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">  
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Products</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" href="./index3.html">Feedbacks</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="./index4.html" style="color: #1D225C;">Sign In</a>
+                </li>
+            </div>
+            </div>
+            </ul>
+            </div>
+    
+          </div>
+        </div>
+</nav>
+<!--NAVBAR-->
+
+
+<div class="container mt-5">
+        <center class="bn">
+          <h1>Meet Berimbolo</h1>
+          <h5>Enter Your Details</h5>
+        </center>
+    </div>
+      
+    <div class="container mt-5">
+        <div class="row d-flex">
+            <div class="col-md-6">
+                <h5>First Name</h5><br>
+                <input id="firstName" class="form-control gap-5" type="text" placeholder="Enter First Name"><br>
+                <h5>Phone Number</h5><br>
+                <input id="phone" class="form-control gap-5" type="text" placeholder="Enter Phone Number"><br>
+            </div>
+            
+            <div class="col-md-6">
+                <h5>Last Name</h5><br>
+                <input id="lastName" class="form-control gap-5" type="text" placeholder="Enter Last Name"><br>
+                <h5>Email</h5><br>
+                <input id="email" class="form-control gap-5" type="text" placeholder="Enter Email"><br>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <button class="btn rounded-5" onclick="validateForm()">Sign In</button>
+</div>
+<!--FORM FOR SIGN IN-->
+      
+      
+<footer class="mt-5" style="background-color: #1D225C; padding: 20px;">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-md-4 mb-4">
+              <h5>Contact Information</h5>
+              <ul class="list-unstyled">
+                <li>Contact Us</li>
+                <li>Technical Support</li>
+                <li>Customer Service</li>
+                <li>Frequently Asked Question</li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <h5>Company Information</h5>
+              <ul class="list-unstyled">
+                <li>About Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms Of Use</li>
+                <li>Certifications and Licenses</li>
+              </ul>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <h5>Social Media</h5>
+              <ul class="list-unstyled">
+                <li>Follow Us On</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+</footer>
+<!--FOOTER-->
+  
+    
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/script.js"></script>
+</body>
+</html>
